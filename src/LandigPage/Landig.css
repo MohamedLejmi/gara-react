@@ -1,0 +1,263 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1b2a31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-background {
+  background-image: url("assets/image/patern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+
+.containerCar {
+  position: relative;
+  /* background-color: #1c1d2e; */
+}
+
+.top-background {
+  background-image: url("assets/image/patern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh; 
+}
+
+.car-image {
+  position: absolute; 
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+}
+
+.bottom-background {
+  background-image: url("assets/image/patern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  background-color: #1b242f;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-left: -5px;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: -100px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 60%;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #0000001a, #fff);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 100%;
+  width: auto;
+  color: black;
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+}
+
+.carousel-container:hover .carousel-btn,
+.carousel-container:hover .carousel-item img {
+  opacity: 1;
+}
+.left-btn {
+  left: 5px;
+}
+
+.right-btn {
+  right: 5px;
+}
+.left-btn img {
+  width: 20px;
+  height: auto;
+}
+
+.right-btn img {
+  width: 20px;
+  height: auto;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+  img {
+    width: 50%;
+  }
+
+  .top-background {
+    background-image: url("assets/image/patern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .car-image {
+    position: absolute; 
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 34%;
+  }
+
+  .bottom-background {
+    background-image: url("assets/image/patern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.app-details-box {
+  position: relative;
+  margin: 1rem 0;
+  padding: 2.1428571429rem;
+  border-radius: 0.75rem;
+  border: solid 1px #28293d;
+  background-color: #151624;
+  box-shadow: 0 2px 4px #0000000f;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.app-details-box .app-information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.app-details-box .app-information .app-label-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-details-box .app-information .app-label-status .app-category {
+  margin: 0 0 0 1.1rem;
+  padding: 0.1rem 0.5rem;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  color: #151624;
+  background-color: #8f90a6;
+  border-radius: 10rem;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+button {
+  background-color: unset;
+  border: 0;
+  text-align: unset;
+  cursor: pointer;
+}
+.app-details-box .app-information .app-publisher button {
+  color: #34db8a;
+}
+.text-small {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.app-details-box .app-action-button {
+  position: relative;
+  height: 2.7rem;
+  width: 8rem;
+  border-radius: 10rem;
+  background-color: #2bb572;
+  box-shadow: 0 2px 4px #0000000f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+.select-pay-service-button .selected-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 7px 12px;
+}
+
+button {
+  background-color: unset;
+  border: 0;
+  text-align: unset;
+  cursor: pointer;
+}
