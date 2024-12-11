@@ -1,0 +1,321 @@
+.newRelease {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  justify-content: start;
+  font: 800 20px Manrope, sans-serif;
+}
+
+.titleIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.mainGames {
+  border-radius: 20px;
+  background-color: #10101e;
+  display: flex;
+  margin-top: 15px;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 13px;
+  max-height: 500px;
+}
+
+.featuredGame {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 392px;
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.featuredImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gradientOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 16px 16px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.heading {
+  color: #ffffff;
+  font: 700 36px Manrope, sans-serif;
+}
+
+.gameInfo {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  align-items: center;
+  gap: 40px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.description {
+  color: #ffffff;
+  align-self: stretch;
+  width: 474px;
+  margin: auto 0;
+  font: 500 14px Manrope, sans-serif;
+}
+
+.rating {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #34db8a;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto 0;
+  font: 700 32px Segoe UI, sans-serif;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.ratingIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 32px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.gameList {
+  align-self: stretch;
+  display: flex;
+  margin-top: 7px;
+  flex-direction: column;
+  font-family: Manrope, sans-serif;
+  justify-content: start;
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.listElemActive,
+.listElemNonActive {
+  border-radius: 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 16px 8px 8px;
+}
+
+.listElemActive {
+  background-color: #28293d;
+}
+
+.gameContent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  justify-content: start;
+}
+
+.gameThumbnail {
+  aspect-ratio: 1.64;
+  object-fit: contain;
+  object-position: center;
+  width: 126px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.gameDetails {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 199px;
+  margin: auto 0;
+}
+
+.namePlateformStars {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  gap: 4px;
+}
+
+.gameTitle {
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  color: #f0f0f0;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 0;
+  margin: 0;
+}
+
+.gameMetadata {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  color: #b2b2b2;
+  font-weight: 400;
+  white-space: nowrap;
+  justify-content: start;
+}
+
+.stars {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.starIcon,
+.platformIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 12px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.gameTypes {
+  align-self: start;
+  display: flex;
+  margin-top: 6px;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #b2b2b2;
+  font-weight: 500;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.gameType {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.scrollbar {
+  border-radius: 100px;
+  background-color: #28293d;
+  display: flex;
+  padding-bottom: 333px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scroller {
+  border-radius: 100px;
+  background: #34db8a;
+  display: flex;
+  height: 59px;
+}
+@media (max-width: 1360px) {
+  .rating {
+    top: 140px;
+    bottom: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .newRelease {
+    max-width: 100%;
+  }
+
+  .featuredGame {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .heading {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .gameInfo {
+    max-width: 100%;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .rating {
+    white-space: initial;
+    font: 700 14px Segoe UI, sans-serif;
+    bottom: auto;
+    top: 10px;
+  }
+  .ratingIcon {
+    width: 16px;
+  }
+
+  .gameMetadata,
+  .gameTypes {
+    white-space: initial;
+  }
+  .gameList {
+    display: none;
+  }
+  .gradientOverlay {
+    padding: 0;
+    position: relative;
+  }
+  .mainGames {
+    background: #28293D;;
+  }
+  .title {
+    font-size: 14px;
+    width: calc(100% + 20px);
+    background: rgba(40, 41, 61, .3);
+    padding: 10px;
+    margin: 0 -10px;
+  }
+}

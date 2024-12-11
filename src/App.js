@@ -1,13 +1,12 @@
 import './App.css';
-import LandigPage from './LandigPage/LandigPage';
-// import SignUp from './Components/SignUp/SignUp';
+import MainContent from "./components/main-content/MainContent";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      {/* <SignUp></SignUp> */}
-      <LandigPage></LandigPage>
-    </div>
+      <BrowserRouter>
+        <MainContent/>
+      </BrowserRouter>
   );
 }
 

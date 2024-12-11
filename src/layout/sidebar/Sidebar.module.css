@@ -1,0 +1,135 @@
+.sidebar {
+  display: flex;
+  width: 230px;
+  flex-direction: column;
+  justify-content: space-between;
+  font: 14px Manrope, sans-serif;
+  height: calc(100vh - 93px);
+  position: fixed;
+  bottom: 0;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  max-width: 230px;
+  flex-direction: column;
+  color: #cccccc;
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: 0.28px;
+  justify-content: start;
+}
+
+.linkActive {
+  border-radius: 100px;
+  background-color: #28293d;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 13px;
+  font-size: 16px;
+  color: #f0f0f0;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  justify-content: start;
+  padding: 10px 8px;
+  text-decoration: none;
+}
+.linkNonActive img {
+  display: none;
+}
+
+.linkNonActive {
+  align-self: stretch;
+  width: 100%;
+  gap: 13px;
+  line-height: 1;
+  padding: 8px 8px 8px 45px;
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.navIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.registrationBtn {
+  align-self: stretch;
+  border-radius: 24px;
+  border: 1px solid #34db8a;
+  margin-top: 24px;
+  min-height: 45px;
+  width: 100%;
+  gap: 6px;
+  color: #34db8a;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px 16px;
+  background: transparent;
+  cursor: pointer;
+}
+.toogleMenu {
+  display: none;
+  width: 28px;
+  object-fit: contain;
+}
+.logoBlock {
+  display: none;
+}
+.logo {
+  aspect-ratio: 3.56;
+  object-fit: contain;
+  object-position: center;
+  width: 114px;
+  max-width: 100%;
+  margin: auto 0;
+  display: none;
+}
+@media (max-width: 1100px) {
+  .sidebar {
+    margin: 0;
+    height: 100vh;
+    top: 0;
+    background: #28293D;
+    left: 0;
+    z-index: 2;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+  }
+  .logo {
+    display: block;
+    width: 75px;
+  }
+  .open {
+    width: 254px;
+    padding: 20px;
+  }
+
+  .tabs {
+    white-space: initial;
+  }
+
+  .linkActive,
+  .linkNonActive {
+    white-space: initial;
+  }
+  .toogleMenu {
+    display: block;
+  }
+  .logoBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+  }
+}

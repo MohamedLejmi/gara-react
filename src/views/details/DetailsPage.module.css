@@ -1,0 +1,139 @@
+.detailsPage {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: #151624;
+}
+.mainDetails {
+    width: 60%;
+}
+.tabs {
+   position: relative;
+    padding: 0 15px;
+}
+.tabItem {
+    background: transparent;
+    font-size: 16px;
+    height: 72px;
+    line-height: 72px;
+    margin-right: 16px;
+    white-space: nowrap;
+    color: #ccc;
+    border: 0;
+}
+.activeTab {
+    color: #f0f0f0;
+    font-weight: 700;
+}
+.borderTab {
+    position: absolute;
+    bottom: 15px;
+    width: 62px;
+    height: 4px;
+    border-radius: 10px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background-color: #12d181;
+}
+.borderTabSecond {
+    transform: translateX(80px);
+}
+.sliderContainer {
+    padding: 0 15px;
+}
+.gameDescription {
+    position: relative;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    line-height: 1.5;
+    max-height: 4.5em;
+    overflow: hidden;
+    word-break: break-word;
+    color: #ccc;
+}
+.bordredBox {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.widgetBox {
+    background: #222;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.widgetBoxTitle {
+    padding: 15px;
+    font-weight: 700;
+}
+.widgetBoxContent {
+    padding: 0 15px 15px;
+    font-size: 14px;
+}
+.releasedDate {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.35em;
+    color: #c9c5ca;
+    padding-left: 16px;
+}
+.releasedDate:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #12d181;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.rightDetails {
+    width: 40%;
+    padding: 72px 90px 15px 15px;
+}
+.infoRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+.infoRow:not(:first-child) {
+    border-top: 1px solid;
+}
+.infoRightCol {
+    font-size: 12px;
+    line-height: 1.35em;
+    color: #ccc;
+    letter-spacing: .24px;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+.infoLeftCol {
+    font-size: 12px;
+    line-height: 1.35em;
+    color: #f0f0f0;
+    letter-spacing: .24px;
+}
+.showsInMobile {
+    display: none;
+}
+@media screen and (max-width: 1300px){
+    .rightDetails {
+        padding: 72px 15px 15px 15px;
+    }
+}
+@media screen and (max-width: 900px){
+    .showsInMobile {
+        display: block;
+    }
+    .showsInMobile .widgetBox {
+        background: transparent;
+    }
+    .rightDetails {
+        display: none;
+    }
+    .mainDetails {
+        width: 100%;
+    }
+}

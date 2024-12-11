@@ -1,0 +1,25 @@
+{
+  "title": "Awesome Game",
+  "icon": "/path/to/icon.png",
+  "developer": "Game Studios",
+  "rating": 4.5,
+  "description": "This is an amazing game...",
+  "media": [
+    { "type": "image", "url": "/path/to/screenshot1.png" },
+    { "type": "image", "url": "/path/to/screenshot2.png" },
+    { "type": "image", "url": "/path/to/video1.mp4" }
+  ],
+  "screenshots": [
+    "/path/to/screenshot1.png",
+    "/path/to/screenshot2.png",
+    "/path/to/screenshot3.png"
+  ],
+  "reviews": [
+    { "author": "John Doe", "comment": "Great app!", "rating": 5 },
+    { "author": "Jane Smith", "comment": "Needs improvement.", "rating": 3 }
+  ],
+  "updates": [
+    { "version": "1.1", "description": "Bug fixes and improvements.", "releaseDate": "2024-09-20" },
+    { "version": "1.2", "description": "Added new features.", "releaseDate": "2024-10-05" }
+  ]
+}

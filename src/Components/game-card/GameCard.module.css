@@ -1,0 +1,148 @@
+.gameCard {
+  border-radius: 16px;
+  background-color: #151624;
+  align-self: stretch;
+  display: flex;
+  min-width: 360px;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: start;
+  width: 360px;
+  margin: auto 0;
+  padding: 8px;
+}
+.gameCard:hover {
+  box-shadow: 0 0 10px 5px rgba(18, 209, 129, 0.3);
+}
+
+.imageContainer {
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  color: #ffffff;
+  white-space: nowrap;
+  font: 700 12px Segoe UI, sans-serif;
+}
+
+.gameCover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gameInfo {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.gameHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font: 700 20px Segoe UI, sans-serif;
+}
+
+.gameTitle {
+  color: #f0f0f0;
+  line-height: 1;
+  align-self: stretch;
+  flex: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+}
+
+.gameRating {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #12d181;
+  text-align: center;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.ratingIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.gameMetadata {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px 100px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  justify-content: space-between;
+}
+
+.gameTypes {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Segoe UI, sans-serif;
+  color: #b2b2b2;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.gameType {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.gameDuration {
+  align-self: stretch;
+  display: flex;
+  align-items: start;
+  gap: 4px;
+  font-family: Manrope, sans-serif;
+  color: #ffffff;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.durationIcon {
+  aspect-ratio: 0.86;
+  object-fit: contain;
+  object-position: center;
+  width: 12px;
+  border-radius: 1px;
+}
+
+.gameDescription {
+  color: #cccccc;
+  margin-top: 10px;
+  font: 400 16px/22px Segoe UI, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 1100px) {
+  .imageContainer,
+  .gameMetadata,
+  .gameTypes,
+  .gameDuration {
+    white-space: initial;
+  }
+  .gameCard {
+    max-width: 100%;
+  }
+}
+@media (max-width: 580px) {
+
+  .gameCard {
+    min-width: 100%;
+  }
+}

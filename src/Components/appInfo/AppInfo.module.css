@@ -1,0 +1,251 @@
+/* Basic layout structure */
+.appInfo {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.appInfoBase {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.appInfoBaseInfo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.appInfoBaseInfoAvatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.appInfoBaseInfoDetail {
+    flex: 1;
+}
+
+.appTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.appTitleContent {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.appTitleLabel {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #333;
+    color: #bbb;
+}
+
+.appInfoBaseInfoTags {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.appPlatformsIcon {
+    width: 14px;
+    height: 14px;
+    color: #fff;
+}
+
+.appTags {
+    display: flex;
+    margin-left: 5px;
+}
+.appTags svg {
+    width: 10px;
+    margin-right: 3px;
+}
+
+.appTagsItem {
+    font-size: 11px;
+    color: #aaa;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.appTagsItem:hover {
+    text-decoration: underline;
+}
+
+.appInfoBaseInfoDetailDeveloperIcon {
+    width: 14px;
+    height: 14px;
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.appInfoBaseInfoDetailDeveloperName {
+    font-size: 11px;
+    color: #bbb;
+}
+
+.appInfoBaseButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.appButton {
+    margin-right: 10px;
+}
+
+.appButtonV2 {
+    align-items: center;
+    border-radius: 24px;
+    background: #34db8a;
+    align-self: stretch;
+    display: flex;
+    gap: 6px;
+    justify-content: start;
+    margin: auto 0;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    height: 50px;
+}
+
+.appButtonV2:hover {
+    background-color: #45a049;
+}
+
+.appButtonIcon {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Image Handling */
+.tapImageWrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.tapImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ellipsis text */
+.tapEllipsis2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.flexCenterY {
+    align-items: center;
+}
+
+.flexCenterX {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.inline {
+    display: inline-block;
+}
+
+/* Margin and padding utilities */
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.ml-4 {
+    margin-left: 16px;
+}
+
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.py-1 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.my0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mr-6 {
+    margin-right: 24px;
+}
+
+/* Font and color utilities */
+.font-bold {
+    font-weight: bold;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.line-height-100 {
+    line-height: 100%;
+}
+
+.line-height-135 {
+    line-height: 1.35;
+}
+
+.whiteTitle {
+    color: white;
+}
+
+.white-subtitle {
+    color: #bbb;
+}
+
+/* Button colors */
+.primary {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Background colors */
+.background-color-black {
+    background-color: black;
+}
+
+/* Lazy load handling (if you need) */
+.lazyImageLoaded {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.lazyImageLoading {
+    opacity: 0;
+}

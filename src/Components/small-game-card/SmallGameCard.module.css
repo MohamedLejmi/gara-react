@@ -1,0 +1,121 @@
+.smallGameCard {
+    border-radius: 16px;
+    background-color: #151624;
+    display: flex;
+    width: 271px;
+    min-width: 271px;
+    margin: auto 0;
+    padding: 4px;
+    gap: 10px;
+}
+.smallGameCard:hover {
+    box-shadow: 0 0 10px 5px rgba(18, 209, 129, 0.3);
+}
+
+.smallGameCover {
+    aspect-ratio: 0.75;
+    object-fit: cover;
+    object-position: center;
+    width: 77px;
+    height: 77px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.smallGameDetails {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.smallGameInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.smallGameTitle {
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: 700;
+    line-height: 1;
+    padding: 1px 0;
+    margin: 0;
+}
+
+.smallGameTypes {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: 500;
+    white-space: nowrap;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.smallGameType {
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.typeIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 12px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.smallGameRating {
+    align-self: start;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #34db8a;
+    font-weight: 500;
+    white-space: nowrap;
+    justify-content: start;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.starIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 12px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+@media (max-width: 1100px) {
+    .smallGameCard {
+        flex-direction: column;
+        width: 80px;
+        min-width: 80px;
+    }
+    .smallGameTitle {
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .smallGameTypes,
+    .smallGameRating {
+        display: none;
+    }
+}
